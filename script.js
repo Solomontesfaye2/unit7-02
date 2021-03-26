@@ -1,8 +1,8 @@
-//connect "Guess" button to "random"function
+// connect "Guess" button to "random"function
 document.getElementById('button').addEventListener('click', comparison)
 let userInput = 0
 
- function comparison() {
+function comparison () {
   // get user input and convert to an integer
   userInput = document.getElementById('input').value
   userInput = parseInt(userInput)
@@ -12,6 +12,6 @@ let userInput = 0
     document.getElementById('answer').innerHTML = 'Nagative'
   } else {
     document.getElementById('answer').innerHTML = 'Postive'
- }
+  }
 
 }
